@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Founder OS | My Journey</title>
+<style>
+:root {
+  --bg:#090e1d; --panel:#141d32; --text:#f2f5ff;
+  --muted:#a5b1ca; --blue:#648cff; --purple:#a477ff;
+  --border:#293653; --green:#42d6a4;
+}
+* {box-sizing:border-box}
+body {
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:Arial,sans-serif;line-height:1.6;
+}
+header {
+  padding:25px 6%;background:#101a31;
+  border-bottom:1px solid var(--border);
+}
+header h1 {margin:0;font-size:27px}
+header p {color:var(--muted);margin:5px 0}
+nav {
+  display:flex;gap:9px;flex-wrap:wrap;
+  padding:15px 6%;background:#10182a;
+  position:sticky;top:0;z-index:5;
+}
+nav a {
+  color:var(--muted);text-decoration:none;
+  padding:8px 12px;border-radius:8px;font-size:13px;
+}
+nav a:hover {background:#263759;color:white}
+main {max-width:1050px;margin:auto;padding:25px 18px}
+section {
+  background:var(--panel);border:1px solid var(--border);
+  border-radius:15px;padding:22px;margin-bottom:22px;
+  scroll-margin-top:90px;
+}
+h2 {margin-top:0;color:#a9c0ff}
+h3 {color:#d1c0ff}
+p,li {color:var(--muted)}
+.hero {
+  background:linear-gradient(120deg,#202e59,#40265f);
+  padding:30px;border-radius:15px;margin-bottom:22px;
+}
+.hero h2 {font-size:30px;color:white;margin:0}
+.cards {
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:13px;margin-top:18px;
+}
+.card {
+  background:#1b2944;padding:17px;border-radius:12px;
+  border:1px solid var(--border);
+}
+.card strong {font-size:23px;color:white;display:block}
+.tag {
+  display:inline-block;background:#293c65;color:#b9ccff;
+  padding:4px 9px;border-radius:20px;font-size:12px;
+}
+.progress {
+  height:10px;background:#293653;border-radius:20px;overflow:hidden;
+}
+#bar {height:100%;width:0;background:var(--green);transition:.3s}
+.task {display:flex;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
+.task input {accent-color:var(--green);width:18px}
+button {
+  background:linear-gradient(90deg,var(--blue),var(--purple));
+  color:white;border:0;padding:11px 16px;border-radius:8px;
+  cursor:pointer;margin-top:10px;
+}
+a {color:#9bb9ff}
+textarea {
+  width:100%;min-height:130px;background:#0e1729;
+  color:white;border:1px solid var(--border);
+  padding:13px;border-radius:9px;font:inherit;
+}
+.resource {padding:10px 0;border-bottom:1px solid var(--border)}
+footer {text-align:center;color:var(--muted);padding:25px}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🚀 AI Founder OS</h1>
+  <p>My journey from CSE student to AI entrepreneur</p>
+  <span class="tag">2026–2030 ROADMAP</span>
+</header>
+
+<nav>
+  <a href="#dashboard">Dashboard</a>
+  <a href="#roadmap">Roadmap</a>
+  <a href="#learning">Learning</a>
+  <a href="#projects">Projects</a>
+  <a href="#startup">Startup Lab</a>
+  <a href="#resources">Resources</a>
+  <a href="#tracker">My Progress</a>
+</nav>
+
+<main>
+
+<div class="hero">
+  <h2>Think. Learn. Build. Launch.</h2>
+  <p>Your personal space to become an AI developer and startup founder.</p>
+  <p>Current level: CSE 1st Year | Beginner Programmer</p>
+</div>
+
+<section id="dashboard">
+<h2>📊 My Dashboard</h2>
+<div class="cards">
+  <div class="card"><strong>01</strong>University Year</div>
+  <div class="card"><strong>AI + ML</strong>Specialization</div>
+  <div class="card"><strong>4 Years</strong>Founder Journey</div>
+  <div class="card"><strong>Global</strong>Target Market</div>
+</div>
+<h3>My mission</h3>
+<p>Build useful AI products that solve real problems in Bangladesh and around the world.</p>
+<h3>Overall learning progress</h3>
+<div class="progress"><div id="bar"></div></div>
+<p id="percent">0% completed</p>
+</section>
+
+<section id="roadmap">
+<h2>🗺️ My Four-Year Roadmap</h2>
+<h3>Year 1 — Foundation</h3>
+<ul>
+<li>Learn Python and C programming.</li>
+<li>Study mathematics and problem-solving.</li>
+<li>Learn Git, GitHub and SQL.</li>
+<li>Build three small projects.</li>
+</ul>
+<h3>Year 2 — AI Developer</h3>
+<ul>
+<li>Learn NumPy, Pandas and Scikit-learn.</li>
+<li>Study machine learning and deep learning.</li>
+<li>Explore PyTorch and Hugging Face.</li>
+<li>Build AI applications.</li>
+</ul>
+<h3>Year 3 — Product Builder</h3>
+<ul>
+<li>Learn LLMs, APIs and RAG.</li>
+<li>Build a minimum viable product.</li>
+<li>Interview potential customers.</li>
+<li>Test your product with real users.</li>
+</ul>
+<h3>Year 4 — Startup Founder</h3>
+<ul>
+<li>Improve your product.</li>
+<li>Find paying customers.</li>
+<li>Learn marketing and finance.</li>
+<li>Build a small team and launch.</li>
+</ul>
+</section>
+
+<section id="learning">
+<h2>📚 My Technical Learning Path</h2>
+<div class="cards">
+  <div class="card"><h3>01. Programming</h3><p>Python, C, JavaScript</p></div>
+  <div class="card"><h3>02. Foundations</h3><p>DSA, SQL, Git, Mathematics</p></div>
+  <div class="card"><h3>03. Machine Learning</h3><p>NumPy, Pandas, Scikit-learn</p></div>
+  <div class="card"><h3>04. Deep Learning</h3><p>PyTorch, Neural Networks</p></div>
+  <div class="card"><h3>05. AI Applications</h3><p>LLM APIs, RAG, FastAPI</p></div>
+  <div class="card"><h3>06. Deployment</h3><p>Docker, PostgreSQL, Cloud</p></div>
+</div>
+<h3>My first 12 months</h3>
+<ol>
+<li>Python basics and calculator</li>
+<li>Loops, functions and quiz app</li>
+<li>Lists, dictionaries and expense tracker</li>
+<li>OOP, Git and GitHub</li>
+<li>SQL and databases</li>
+<li>HTML, CSS and JavaScript</li>
+<li>NumPy and Pandas</li>
+<li>Statistics and machine learning</li>
+<li>LLM concepts and APIs</li>
+<li>Build an AI chatbot</li>
+<li>Interview potential users</li>
+<li>Build and test an AI product</li>
+</ol>
+</section>
+
+<section id="projects">
+<h2>💻 My Project Portfolio</h2>
+<div class="cards">
+  <div class="card">
+    <h3>01. Expense Tracker</h3>
+    <p>Python, SQLite, CSV</p>
+    <p>Manage student expenses.</p>
+  </div>
+  <div class="card">
+    <h3>02. AI Study Assistant</h3>
+    <p>Python, LLM API, Streamlit</p>
+    <p>Help students understand learning materials.</p>
+  </div>
+  <div class="card">
+    <h3>03. Smart Shop Assistant</h3>
+    <p>Python, FastAPI, PostgreSQL</p>
+    <p>Help small shops organize information.</p>
+  </div>
+  <div class="card">
+    <h3>04. Bangla-English AI Assistant</h3>
+    <p>LLM, RAG, FastAPI</p>
+    <p>Answer business enquiries in two languages.</p>
+  </div>
+</div>
+</section>
+
+<section id="startup">
+<h2>🚀 My Startup Lab</h2>
+<h3>Business ideas</h3>
+<ul>
+<li>Bangla AI Assistant</li>
+<li>AI Education Platform</li>
+<li>AI for Small Businesses</li>
+<li>AI Agriculture Assistant</li>
+<li>AI Automation Platform</li>
+</ul>
+<h3>Startup milestones</h3>
+<ol>
+<li>Identify a real problem.</li>
+<li>Interview 10–15 potential customers.</li>
+<li>Build a prototype.</li>
+<li>Test with five businesses or users.</li>
+<li>Improve based on feedback.</li>
+<li>Experiment with a paid version.</li>
+</ol>
+</section>
+
+<section id="resources">
+<h2>🌐 My Learning Resources</h2>
+<div class="resource">
+  <b>CS50 Python</b><br>
+  <a href="https://cs50.harvard.edu/python/" target="_blank">Open course ↗</a>
+</div>
+<div class="resource">
+  <b>Kaggle Learn</b><br>
+  <a href="https://www.kaggle.com/learn" target="_blank">Learn data science ↗</a>
+</div>
+<div class="resource">
+  <b>freeCodeCamp</b><br>
+  <a href="https://www.freecodecamp.org/" target="_blank">Learn programming ↗</a>
+</div>
+<div class="resource">
+  <b>Hugging Face</b><br>
+  <a href="https://huggingface.co/learn" target="_blank">Learn AI ↗</a>
+</div>
+<div class="resource">
+  <b>Startup School</b><br>
+  <a href="https://www.startupschool.org/" target="_blank">Learn entrepreneurship ↗</a>
+</div>
+</section>
+
+<section id="tracker">
+<h2>✅ My Year 1 Progress Tracker</h2>
+<p>Check each task when you complete it.</p>
+<div id="tasks"></div>
+<h3 id="count">0 completed</h3>
+<button onclick="resetTasks()">Reset checklist</button>
+<h3>📝 My Personal Notes</h3>
+<p>Write down ideas, lessons and things you want to remember.</p>
+<textarea id="notes" placeholder="My learning notes and startup ideas..."></textarea>
+<button onclick="saveNotes()">Save notes</button>
+<span id="saved"></span>
+</section>
+
+<footer>
+  <p>AI Founder OS | Learn something every day.</p>
+  <p>Built for my future as an AI entrepreneur.</p>
+</footer>
+</main>
+
+<script>
+const items = [
+"Learn Python fundamentals",
+"Complete 50 beginner programming exercises",
+"Learn Git and GitHub",
+"Build a calculator and quiz application",
+"Build a student expense tracker",
+"Learn SQL and database basics",
+"Create a personal portfolio",
+"Learn basic statistics and machine learning",
+"Build my first AI chatbot",
+"Interview 10 potential customers",
+"Publish one complete AI project",
+"Write a one-page startup business plan"
+];
+
+let completed = JSON.parse(localStorage.getItem("founderTasks") || "[]");
+
+function render() {
+ const root = document.getElementById("tasks");
+ root.innerHTML = "";
+ items.forEach((item,i) => {
+   const label = document.createElement("label");
+   label.className = "task";
+   const checkbox = document.createElement("input");
+   checkbox.type = "checkbox";
+   checkbox.checked = completed.includes(i);
+   checkbox.addEventListener("change", () => {
+     if(checkbox.checked) completed.push(i);
+     else completed = completed.filter(x => x !== i);
+     localStorage.setItem("founderTasks",JSON.stringify(completed));
+     render();
+   });
+   const span = document.createElement("span");
+   span.textContent = item;
+   label.append(checkbox,span);
+   root.appendChild(label);
+ });
+ const pct = Math.round(completed.length/items.length*100);
+ document.getElementById("count").textContent =
+   `${completed.length} of ${items.length} tasks completed`;
+ document.getElementById("bar").style.width = pct+"%";
+ document.getElementById("percent").textContent = pct+"% completed";
+}
+function resetTasks() {
+ if(confirm("Reset all completed tasks?")) {
+   completed=[];
+   localStorage.setItem("founderTasks","[]");
+   render();
+ }
+}
+function saveNotes() {
+ localStorage.setItem("founderNotes",document.getElementById("notes").value);
+ document.getElementById("saved").textContent=" Notes saved!";
+}
+document.getElementById("notes").value =
+ localStorage.getItem("founderNotes") || "";
+render();
+</script>
+</body>
+</html>
